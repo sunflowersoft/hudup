@@ -1,0 +1,176 @@
+From: "Saved by Windows Internet Explorer 10"
+Subject: Paper Submission System - Home
+Date: Sun, 26 May 2013 13:30:38 +0700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://papersubmission.scirp.org/
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" =
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META =
+content=3D"IE=3D9.0000"=20
+http-equiv=3D"X-UA-Compatible">
+=20
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"> <TITLE>Paper=20
+Submission System - Home</TITLE>=20
+<META name=3D"robots" content=3D"all">=20
+<META name=3D"MSSmartTagsPreventParsing" content=3D"True">=20
+<META http-equiv=3D"MSThemeCompatible" content=3D"Yes">=20
+<META http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEmulateIE9">=20
+<STYLE type=3D"text/css">=0A=
+body{padding:0;margin:0; border:0;color:#000;background:#fff;font-size: =
+14px; font-family:Arial, Helvetica, sans-serif, "=E5=AE=8B=E4=BD=93";}=0A=
+img{border:none;}img.border{border:0px;}ul,ul li =
+{list-style-type:none;padding:0;margin:0;} textarea{resize:none;}=0A=
+a:link { color: #2366a8; text-decoration: none;}a:visited {color: =
+#2366a8;text-decoration: none;}a:hover { text-decoration: none; color: =
+#ff3300;}a:active { text-decoration: none;}=0A=
+.login_sub {border:0;width:85px;height:26px;cursor:pointer;background: =
+url(images/login_head_bg.jpg) no-repeat -80px -220px;}=0A=
+.login_page {border:0;width:65px;height:22px;cursor:pointer;background: =
+url(images/login_head_bg.jpg) no-repeat -10px -220px;}=0A=
+p =
+{margin:0;padding:0;}input,button,select,textarea{outline:none}textarea{r=
+esize:none}=0A=
+a {outline: none;}a:active =
+{star:expression(this.onFocus=3Dthis.blur());}:focus { outline:0; }=0A=
+#login_head {margin:0 auto;mix-width: 980px;height:162px;background: =
+#97D8F4 url(images/login_head_bg.jpg) repeat-x left top;}=0A=
+#login_main {overflow:auto;min-width: 980px;}=0A=
+#login_main .con{width:980px;z-index:2;margin: 0 auto;text-align:left;}=0A=
+/*#login_main .l_ad{float:left;width:450px;height:403px;background: =
+url(images/login_head_bg.jpg) no-repeat 0 -163px;}=0A=
+#login_main .l_ks{float:right;width:500px;padding-top:40px;}*/=0A=
+#login_main .l_ks{float:left;width:500px;padding-top:40px;}=0A=
+#login_main =
+.l_ad{float:left;width:330px;height:403px;background-image:none}=0A=
+#login_main .l_ks =
+.l_ico{float:left;width:400px;padding-left:50px;line-height:29px;color:#0=
+099cc;font-size:18px; font-weight:bold;background: =
+url(images/login_head_bg.jpg) no-repeat -20px -175px;}=0A=
+#login_main .l_ks ul{float:left;width:500px;margin-top:30px;}=0A=
+#login_main .l_ks ul li{float:left;width:500px; padding:5px 0; =
+line-height:26px;font-size:14px;}=0A=
+#login_main .l_ks ul li span{float:left;width:85px;color:#2366a8; =
+font-weight:bold;padding-right:10px;text-align:right;}=0A=
+#login_main .l_ks ul li span img{padding:3px 0 0 5px;}=0A=
+#login_main .l_ks ul li input{float:left;}=0A=
+#login_main .code {color:#2366a8; text-decoration:underline; =
+font-weight:normal;}=0A=
+#login_logo{width:300px;height:53px;font-size:32px;font-weight:bold;font-=
+family:Times New Roman;padding:12px 0 0 80px;background: =
+url(images/logo.gif) no-repeat 0 =
+-2px;left:22%;top:30px;position:absolute;}=0A=
+=0A=
+#login_main .login_name { =
+border:0;width:163px;height:28px;line-height:28px;padding:0 =
+5px;border:1px solid #abb3be;background: url(images/login_head_bg.jpg) =
+repeat-x -10px -266px;}=0A=
+#login_main .login_code { =
+border:0;width:39px;height:28px;line-height:28px;padding:0 =
+5px;border:1px solid #abb3be;background: url(images/login_head_bg.jpg) =
+repeat-x -10px -266px;}=0A=
+</STYLE>
+=20
+<META name=3D"GENERATOR" content=3D"MSHTML 10.00.9200.16576"></HEAD>
+<BODY>=20
+<DIV id=3D"login_head">
+<DIV id=3D"login_logo">Scientific Research</DIV></DIV>
+<DIV id=3D"login_main">
+<DIV class=3D"con">
+<DIV class=3D"l_ad"></DIV>
+<DIV class=3D"l_line"></DIV>
+<DIV class=3D"l_ks">
+<DIV class=3D"l_ico">Paper Submission System</DIV>
+<FORM name=3D"form1" id=3D"form1" onsubmit=3D"return checkLogin()" =
+action=3D"/checklogin.action"=20
+method=3D"post"><INPUT name=3D"journalID" type=3D"hidden">	  =20
+<UL>
+  <LI><SPAN>Login Name</SPAN><INPUT name=3D"login.loginName" =
+class=3D"login_name"=20
+  id=3D"loginName" type=3D"text">&nbsp;&nbsp;<FONT =
+color=3D"red"></FONT></LI>
+  <LI><SPAN>Password</SPAN><INPUT name=3D"login.plainPassword" =
+class=3D"login_name"=20
+  id=3D"password" type=3D"password"> &nbsp;<FONT =
+color=3D"red"></FONT></LI>
+  <LI style=3D"padding: 10px 0px 25px 95px; width: 200px;"><INPUT =
+class=3D"login_sub" type=3D"submit" value=3D"Sign in"><!--<a =
+href=3D"javascript:document.form1.submit();" >Sign in</a> --></LI>
+  <LI style=3D"line-height: 16px;">New user ? &nbsp;<A class=3D"code" =
+href=3D"http://papersubmission.scirp.org/users/showAddUser?journalID=3D">=
+Sign=20
+  up</A></LI>
+  <LI style=3D"line-height: 16px;">Forgot Your Password ? &nbsp;<A =
+class=3D"code"=20
+  href=3D"http://papersubmission.scirp.org/users/showFindPwd">Click =
+here</A></LI>
+  <LI style=3D"line-height: 16px;">Back to SCIRP home ? &nbsp;<A =
+class=3D"code"=20
+  =
+href=3D"http://www.scirp.org/">http://www.scirp.org/</A></LI></UL></FORM>=
+</DIV></DIV></DIV>
+<SCRIPT language=3D"javascript">=0A=
+  function changeimg(){  =0A=
+	  var auth =3D document.getElementById("auth");  =0A=
+	  auth.src=3D"authImage?t=3D"+Math.random();=0A=
+  }=0A=
+	  String.prototype.Trim =3D function()=0A=
+	  {=0A=
+	  	return this.replace(/(^\s*)|(\s*$)/g, "");=0A=
+	  } =0A=
+	  =0A=
+    function checkLogin()=0A=
+    {=0A=
+=0A=
+  	var username=3Ddocument.getElementById("loginName");=0A=
+  	var password=3Ddocument.getElementById("password");=0A=
+  	var authCode=3Ddocument.getElementById("authCode");=0A=
+  	if(username.value.Trim()=3D=3D"")=0A=
+  	{=0A=
+  		alert("Login name is required!");=0A=
+  		username.focus();=0A=
+  		return false;=0A=
+  	}=0A=
+  	else if(password.value.Trim()=3D=3D"")=0A=
+  	{=0A=
+  		alert("PassWord is required!");=0A=
+  		password.focus();=0A=
+  		return false;=0A=
+  	}=0A=
+  	=0A=
+  	else=0A=
+  	{=0A=
+  		return true;=0A=
+  	}=0A=
+  	=0A=
+  }=0A=
+    //var myw =3D window.screen.availWidth; =0A=
+   // var myh =3D window.screen.availHeight; =0A=
+   // window.moveTo(0, 0);          =0A=
+   // window.resizeTo(myw, myh); =0A=
+</SCRIPT>
+=20
+<SCRIPT type=3D"text/javascript">=0A=
+=0A=
+  var _gaq =3D _gaq || [];=0A=
+  _gaq.push(['_setAccount', 'UA-12768168-3']);=0A=
+  _gaq.push(['_trackPageview']);=0A=
+=0A=
+  (function() {=0A=
+    var ga =3D document.createElement('script'); ga.type =3D =
+'text/javascript'; ga.async =3D true;=0A=
+    ga.src =3D ('https:' =3D=3D document.location.protocol ? =
+'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';=0A=
+    var s =3D document.getElementsByTagName('script')[0]; =
+s.parentNode.insertBefore(ga, s);=0A=
+  })();=0A=
+=0A=
+</SCRIPT>
+ </BODY></HTML>

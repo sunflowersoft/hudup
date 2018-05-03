@@ -1,0 +1,8 @@
+Processor:                       Pentium(R) Dual-Core CPU E5700 @ 3.00GHz
+Physical Installed memory (RAM): 2GB
+Physical Available memory (RAM): 1000MB
+Hard disk:                       320 GB
+Operating system:                Microsoft Windows 7 Ultimate 2009, 32-bit (version 6.1.7600)
+
+Java: JDK 7 version 1.7.0_03 build 1.7.0_03-b05
+      HotSpot(TM) Client VM (build 22.1-b02, mixed mode, sharing)

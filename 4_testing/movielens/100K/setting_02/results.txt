@@ -1,0 +1,417 @@
+General evaluation
+
+  bayesnet_clustered
+    F1 = 0.03814163059
+    Hudup recall = 1.0
+    MAE = 0.182146579027
+    MSE = 0.067183323205
+    NDPM = 0.966794610023
+    Pearson correlation = 0.362005650997
+    Precision = 0.067543409765
+    RMSE = 0.259163916111
+    Recall = 0.027016950771
+    Setup time = 16.046199798584
+    Spearman correlation = 0.140882968903
+    Speed = 0.32282936573
+
+  cosine
+    F1 = 3.48832051E-4
+    Hudup recall = 1.0
+    MAE = 0.372778594494
+    MSE = 0.238870918751
+    NDPM = 1.0
+    Pearson correlation = -1.0
+    Precision = 6.36952347E-4
+    RMSE = 0.484850168228
+    Recall = 2.44920637E-4
+    Setup time = 0.0
+    Spearman correlation = -1.0
+    Speed = 1.21170091629
+
+  gfall
+    F1 = 0.057579047978
+    Hudup recall = 0.947332441807
+    MAE = 0.214593082666
+    MSE = 0.102848559618
+    NDPM = 0.982122004032
+    Pearson correlation = NaN
+    Precision = 0.105540685356
+    RMSE = 0.320411384106
+    Recall = 0.040417410433
+    Setup time = 1.625600099564
+    Spearman correlation = 0.125398680568
+    Speed = 0.004909853451
+
+  pearson
+    F1 = 2.56213389E-4
+    Hudup recall = 1.0
+    MAE = 0.457470059395
+    MSE = 0.311754345894
+    NDPM = 1.0
+    Pearson correlation = -1.0
+    Precision = 4.60675918E-4
+    RMSE = 0.5145804286
+    Recall = 1.81010852E-4
+    Setup time = 0.0
+    Spearman correlation = 0.0
+    Speed = 2.100733041763
+
+  simple
+    F1 = 4.00997873E-4
+    Hudup recall = 1.0
+    MAE = 0.333911955357
+    MSE = 0.246156990528
+    NDPM = 0.5
+    Pearson correlation = NaN
+    Precision = 7.65179226E-4
+    RMSE = 0.477048695087
+    Recall = 2.77112616E-4
+    Setup time = 0.0
+    Spearman correlation = 0.0
+    Speed = 0.110057368875
+
+
+Dataset evaluation
+
+  Dataset "1"
+    bayesnet_clustered
+      Hudup recall = 1.0
+      MAE = 0.170926511288
+      MSE = 0.067092649639
+      NDPM = 0.945652186871
+      Pearson correlation = NaN
+      Precision = 0.065577343106
+      Recall = 0.016174968332
+      Setup time = 12.994999885559
+      Spearman correlation = 0.144927531481
+      Speed = 0.147128432989
+      F1 = 0.025949392468
+      RMSE = 0.259022474289
+    cosine
+      Hudup recall = 1.0
+      MAE = 0.346810817719
+      MSE = 0.225079581141
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 8.71459721E-4
+      Recall = 2.1494976E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 1.201777100563
+      F1 = 3.44842469E-4
+      RMSE = 0.474425524473
+    gfall
+      Hudup recall = 0.976034879684
+      MAE = 0.204441040754
+      MSE = 0.098583459854
+      NDPM = 0.997777760029
+      Pearson correlation = NaN
+      Precision = 0.147450625896
+      Recall = 0.036134406924
+      Setup time = 1.654000043869
+      Spearman correlation = 0.127821058035
+      Speed = 0.00448148232
+      F1 = 0.058044396341
+      RMSE = 0.313980042934
+    pearson
+      Hudup recall = 1.0
+      MAE = 0.491742938757
+      MSE = 0.336963713169
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 6.5359479E-4
+      Recall = 1.61212316E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 2.075246810913
+      F1 = 2.5863183E-4
+      RMSE = 0.580485761166
+    simple
+      Hudup recall = 1.0
+      MAE = 0.173131093383
+      MSE = 0.082570664585
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 0.001307189581
+      Recall = 3.22424632E-4
+      Setup time = 0.0
+      Spearman correlation = -1.0
+      Speed = 0.117082826793
+      F1 = 5.17263659E-4
+      RMSE = 0.287351131439
+
+  Dataset "2"
+    bayesnet_clustered
+      Hudup recall = 1.0
+      MAE = 0.182967960835
+      MSE = 0.065767288208
+      NDPM = 0.976595759392
+      Pearson correlation = NaN
+      Precision = 0.088496930897
+      Recall = 0.030784826726
+      Setup time = 15.880999565125
+      Spearman correlation = 0.207188993692
+      Speed = 0.304119259119
+      F1 = 0.04567945376
+      RMSE = 0.25645133853
+    cosine
+      Hudup recall = 1.0
+      MAE = 0.334723114967
+      MSE = 0.197010219097
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 7.66871148E-4
+      Recall = 2.66766263E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 1.193504691124
+      F1 = 3.95835785E-4
+      RMSE = 0.443858325481
+    gfall
+      Hudup recall = 0.897396624088
+      MAE = 0.188981875777
+      MSE = 0.088912136853
+      NDPM = 0.930875599384
+      Pearson correlation = NaN
+      Precision = 0.124955691397
+      Recall = 0.042799901217
+      Setup time = 1.840999960899
+      Spearman correlation = 0.125417992473
+      Speed = 0.004666156601
+      F1 = 0.063760519028
+      RMSE = 0.298181384802
+    pearson
+      Hudup recall = 1.0
+      MAE = 0.728296399117
+      MSE = 0.642945766449
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 3.06748465E-4
+      Recall = 1.06706502E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 2.067449808121
+      F1 = 1.5833434E-4
+      RMSE = 0.801838994026
+    simple
+      Hudup recall = 1.0
+      MAE = 0.375
+      MSE = 0.25
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 0.001073619584
+      Recall = 3.73472751E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 0.106384411454
+      F1 = 5.5417011E-4
+      RMSE = 0.5
+
+  Dataset "3"
+    bayesnet_clustered
+      Hudup recall = 1.0
+      MAE = 0.187864080071
+      MSE = 0.07002427429
+      NDPM = 1.013244986534
+      Pearson correlation = 0.561004221439
+      Precision = 0.057324107736
+      Recall = 0.026417901739
+      Setup time = 15.100999832153
+      Spearman correlation = 0.077142871916
+      Speed = 0.132933348417
+      F1 = 0.036167815328
+      RMSE = 0.264620989561
+    cosine
+      Hudup recall = 1.0
+      MAE = 0.350959867239
+      MSE = 0.193724945188
+      NDPM = 1.0
+      Pearson correlation = -1.0
+      Precision = 4.61361022E-4
+      Recall = 2.12618936E-4
+      Setup time = 0.0
+      Spearman correlation = -1.0
+      Speed = 1.205020546913
+      F1 = 2.91089033E-4
+      RMSE = 0.440141946077
+    gfall
+      Hudup recall = 0.955120801926
+      MAE = 0.218565091491
+      MSE = 0.109005175531
+      NDPM = 1.018272399902
+      Pearson correlation = NaN
+      Precision = 0.084153987467
+      Recall = 0.038307037205
+      Setup time = 1.529000043869
+      Spearman correlation = 0.071918383241
+      Speed = 0.004901033361
+      F1 = 0.052648425102
+      RMSE = 0.330159306526
+    pearson
+      Hudup recall = 1.0
+      MAE = 0.446847587824
+      MSE = 0.257030725479
+      NDPM = 1.0
+      Pearson correlation = -1.0
+      Precision = 6.92041533E-4
+      Recall = 3.18928389E-4
+      Setup time = 0.0
+      Spearman correlation = -1.0
+      Speed = 2.090526103973
+      F1 = 4.36633534E-4
+      RMSE = 0.50698196888
+    simple
+      Hudup recall = 1.0
+      MAE = 0.300000011921
+      MSE = 0.17499999702
+      NDPM = 0.5
+      Pearson correlation = NaN
+      Precision = 5.76701248E-4
+      Recall = 2.65773677E-4
+      Setup time = 0.0
+      Spearman correlation = 1.0
+      Speed = 0.108826324344
+      F1 = 3.63861298E-4
+      RMSE = 0.418330013752
+
+  Dataset "4"
+    bayesnet_clustered
+      Hudup recall = 1.0
+      MAE = 0.186399996281
+      MSE = 0.068999998271
+      NDPM = 0.918749988079
+      Pearson correlation = 0.498803377151
+      Precision = 0.065798044205
+      Recall = 0.032092358917
+      Setup time = 17.268999099731
+      Spearman correlation = 0.188232302666
+      Speed = 0.580807209015
+      F1 = 0.043142419308
+      RMSE = 0.26267850399
+    cosine
+      Hudup recall = 1.0
+      MAE = 0.451659530401
+      MSE = 0.366674095392
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 4.34310525E-4
+      Recall = 2.11830746E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 1.225074410439
+      F1 = 2.84768437E-4
+      RMSE = 0.605536222458
+    gfall
+      Hudup recall = 0.954496204853
+      MAE = 0.225095778704
+      MSE = 0.103847384453
+      NDPM = 0.978835999966
+      Pearson correlation = NaN
+      Precision = 0.088393367827
+      Recall = 0.044502016157
+      Setup time = 1.575999975204
+      Spearman correlation = 0.191672727466
+      Speed = 0.005264350679
+      F1 = 0.059199694544
+      RMSE = 0.322253614664
+    pearson
+      Hudup recall = 1.0
+      MAE = 0.127391755581
+      MSE = 0.0173768159
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 2.17155262E-4
+      Recall = 1.05915373E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 2.126678705215
+      F1 = 1.42384219E-4
+      RMSE = 0.131821155548
+    simple
+      Hudup recall = 1.0
+      MAE = 0.321428567171
+      MSE = 0.223214283586
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 6.51465787E-4
+      Recall = 3.17746133E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 0.110397681594
+      F1 = 4.271527E-4
+      RMSE = 0.472455590963
+
+  Dataset "5"
+    bayesnet_clustered
+      Hudup recall = 1.0
+      MAE = 0.182574436069
+      MSE = 0.064032398164
+      NDPM = 0.979729712009
+      Pearson correlation = 0.026209369302
+      Precision = 0.060520607978
+      Recall = 0.029614690691
+      Setup time = 18.985000610352
+      Spearman correlation = 0.086923100054
+      Speed = 0.449158519506
+      F1 = 0.039769083261
+      RMSE = 0.253046244383
+    cosine
+      Hudup recall = 1.0
+      MAE = 0.379739522934
+      MSE = 0.211865797639
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 6.50759204E-4
+      Recall = 3.18437524E-4
+      Setup time = 0.0
+      Spearman correlation = -1.0
+      Speed = 1.233127951622
+      F1 = 4.27624531E-4
+      RMSE = 0.460288822651
+    gfall
+      Hudup recall = 0.953613817692
+      MAE = 0.235881537199
+      MSE = 0.113894626498
+      NDPM = 0.984848499298
+      Pearson correlation = NaN
+      Precision = 0.082749769092
+      Recall = 0.040343690664
+      Setup time = 1.527999997139
+      Spearman correlation = 0.110163241625
+      Speed = 0.005236246157
+      F1 = 0.054242216051
+      RMSE = 0.337482780218
+    pearson
+      Hudup recall = 1.0
+      MAE = 0.493071764708
+      MSE = 0.304454892874
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 4.33839479E-4
+      Recall = 2.12291692E-4
+      Setup time = 0.0
+      Spearman correlation = 1.0
+      Speed = 2.143763780594
+      F1 = 2.85083021E-4
+      RMSE = 0.551774322987
+    simple
+      Hudup recall = 1.0
+      MAE = 0.5
+      MSE = 0.5
+      NDPM = NaN
+      Pearson correlation = NaN
+      Precision = 2.1691974E-4
+      Recall = 1.06145846E-4
+      Setup time = 0.0
+      Spearman correlation = NaN
+      Speed = 0.107595562935
+      F1 = 1.4254151E-4
+      RMSE = 0.707106769085
+
+
+Note
+  Dataset "1" has path "file:/E:/working/vn/apps/hudup3/3_implementation/datasets/rating001.test"
+  Dataset "2" has path "file:/E:/working/vn/apps/hudup3/3_implementation/datasets/rating002.test"
+  Dataset "3" has path "file:/E:/working/vn/apps/hudup3/3_implementation/datasets/rating003.test"
+  Dataset "4" has path "file:/E:/working/vn/apps/hudup3/3_implementation/datasets/rating004.test"
+  Dataset "5" has path "file:/E:/working/vn/apps/hudup3/3_implementation/datasets/rating005.test"

@@ -1,0 +1,7 @@
+Unrated count = 3
+Min sup (gfall) = 0.0
+Max recommend = 10
+Auto enhance = false
+
+
+Algorithms: cosine, gfall, pearson, simple

@@ -1,0 +1,6 @@
+Minimum support (gfall) = 0.0
+Ratio of dimension reduction (bayesnet_clustered) = 0.9
+Max recommend = 10
+
+
+Algorithms: bayesnet_clustered, bayesnet_binary_distributed_ext, cosine, gfall, pearson, simple

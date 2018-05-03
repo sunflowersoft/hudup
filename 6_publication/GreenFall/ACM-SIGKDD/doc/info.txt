@@ -1,0 +1,4 @@
+ACM SIGKDD 2016 Conference on Knowledge Discovery and Data Mining: http://kdd.org/kdd2016
+Information: https://research.cs.wisc.edu/dbworld/messages/2015-11/1447707114.html
+Submission system: https://cmt.research.microsoft.com/KDD2016
+    Username: ng_phloc@yahoo.com, Password: maiphuong

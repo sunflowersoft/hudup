@@ -1,0 +1,8 @@
+# Sample batch script
+
+
+algorithms=bayes_lookup_table, bayesnet_clustered, bayesnet_combinator, gfall, gfallmaxi, mean_item, mean_user, neighbor_itembased, neighbor_userbased, stat_naive, svd_gradient, svd_gradient_plus
+
+trainingsets=datasets/movielens/rating001.base#movielens_parser#file, datasets/movielens/rating002.base#movielens_parser#file, datasets/movielens/rating003.base#movielens_parser#file, datasets/movielens/rating004.base#movielens_parser#file, datasets/movielens/rating005.base#movielens_parser#file
+
+testingsets=datasets/movielens/rating001.test#movielens_parser#file, datasets/movielens/rating002.test#movielens_parser#file, datasets/movielens/rating003.test#movielens_parser#file, datasets/movielens/rating004.test#movielens_parser#file, datasets/movielens/rating005.test#movielens_parser#file

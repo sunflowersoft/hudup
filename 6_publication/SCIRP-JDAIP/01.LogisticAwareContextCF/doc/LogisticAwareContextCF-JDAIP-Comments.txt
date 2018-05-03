@@ -1,0 +1,9 @@
+In this paper, the author proposes an improved algorithm to deal with the minimization problems of both traditional rating data and contextual data. Diagrams and mathematical equations are used to give the proof of the presented idea. Given the validity of the theoretical analyses, the proposed algorithm is right. 
+
+Minor comments:
+
+1. It is better to give a brief outline in the end of the introduction section so that the readers can get to know how you organize this paper easily.
+Answer: Thank you very much for giving me useful comments. I have just added the brief outline of the proposed approach at the end of the introduction section.
+
+2. There should be some simulation results to prove your proposed idea.
+Answer: Thank you very much for giving me useful comments. I have just programmed and added the simulation of the proposed approach at the end of the main section 2.

@@ -1,0 +1,301 @@
+Decision on your Manuscript
+Data Mining and Knowledge Discovery (DAMI) <em@editorialmanager.com>
+May 5, 2015 at 3:10 PM
+Dear Dr. Nguyen,
+
+We have received the reports from our advisors on your manuscript, "A New Approach for Collaborative Filtering based on Mining Frequent Itemsets". 
+
+With regret, I must inform you that, based on the advice received, the Editor-in-Chief has decided that your manuscript cannot be accepted for publication in Data Mining and Knowledge Discovery.
+
+Attached, please find the reviewer comments for your perusal. 
+
+I would like to thank you very much for forwarding your manuscript to us for consideration and wish you every success in finding an alternative place of publication.
+
+Best regards,
+Anandhi Sankar
+Springer Journals Editorial Office
+Data Mining and Knowledge Discovery
+
+Comments for the Author:
+
+
+Dear Loc Nguyen,
+
+Thank you for your submission to Data Mining and Knowledge Discovery.  We have received advice from three reviewers that while your paper presents a potentially interesting new technique, it is not suited in its current form for publication in Data Mining and Knowledge Discovery.  Based on the reviewer comments, the changes required are too extensive to be handled in a revision of the paper.
+
+The reviewers' comments follow.  We hope that you will find them useful in your ongoing research.
+
+Yours sincerely,
+
+Alípio Jorge
+Concha Bielza
+João Gama
+Indrė Žliobaitė
+- guest editors of ECML PKDD 2015 special issue
+
+---
+
+Reviewer #1: DATA MINING AND KNOWLEDGE DISCOVERY REVIEW FORM:
+
+DATA MINING AND KNOWLEDGE DISCOVERY IS A LEADING VENUE FOR ARCHIVAL PUBLICATION OF RESEARCH IN THE DISCIPLINES OF DATA MINING AND KNOWLEDGE DISCOVERY.  PAPERS SHOULD BE ASSESSED AGAINST HIGH STANDARDS OF SCHOLARSHIP, PRESENTATION AND EXPECTED IMPACT.
+
+
+
+SUMMARY. PROVIDE A BRIEF SUMMARY OF THE REASONS FOR YOUR RECOMMENDATION. WHAT ARE THE MAJOR STRENGTHS AND WEAKNESSES OF THE MANUSCRIPT?
+
+The paper presents a personal point of view about Recommender Systems (RS). From a general description of RS and their classification, the author describes a new proposal based on the discovery of frequent item sets.
+
+The algorithmic proposal in quite detailed and do not use any previous algorithm in any part of the proposed method. However, there are many options in the literature that the paper does not consider.
+
+In fact, there is not a properly description of the state of the art. There is no identification of flaws in available RS.
+
+RELEVANCE. HOW RELEVANT IS THE PAPER TO THE DISCIPLINES OF DATA MINING AND KNOWLEDGE DISCOVERY?
+
+No relevance
+
+SIGNIFICANCE. HOW SIGNIFICANTLY DOES THE PAPER ADVANCE THE CURRENT STATE-OF-THE-ART? HOW BIG AN IMPACT WILL THE PAPER HAVE, ON WHAT AREAS, AND WHY?  WILL THE PAPER STIMULATE FURTHER RESEARCH?
+
+No significance
+
+RELATED RESEARCH.  IS ALL RELEVANT PRIOR WORK DISCUSSED? IS THE CURRENT WORK A DISTINCT AND NEW CONTRIBUTION RELATIVE TO THE AUTHOR(S)' PREVIOUS WORK?  [NOTE, ECMLPKDD TRACK DOES NOT CONSIDER EXPANDED VERSIONS OF WORK PREVIOUSLY PUBLISHED IN CONFERENCES OR WORKSHOPS.]
+
+It is hard to classify this paper for this purpose. The paper is out of the stream of research in RS
+
+[NOTE, DMKD CLOSELY SCRUTINIZES ANY SUGGESTION BY A REVIEWER THAT THEIR OWN WORK SHOULD BE REFERENCED AND RESERVES THE RIGHT TO DELETE ANY SUCH COMMENTS FROM A REVIEW. WHERE A REVIEWER BELIEVES THEIR OWN WORK SHOULD BE CITED,WE ADVISE WRITING A COMMENT TO THE EDITORS UNDER CONFIDENTIAL COMMENTS TO THE EDITOR.]
+
+
+
+RELATIONSHIP TO PREVIOUS RESEARCH. IS THE NOVEL CONTRIBUTION OF THE NEW WORK MADE EXPLICIT TOGETHER WITH ITS RELATIONSHIP TO PRIOR WORK?  IS THE NEED FOR THE NEW CONTRIBUTION SUBSTANTIATED?  DOES THE PAPER MAKE CLEAR NOT ONLY THE STRENGTH BUT ALSO THE LIMITATIONS OF THE NEW CONTRIBUTION?
+
+The paper does not present any contribution to the field
+
+
+THEORETICAL AND EXPERIMENTAL EVALUATION. IS THE THEORETICAL AND EXPERIMENTAL EVALUATION SOUND AND APPROPRIATE. ARE ALL CLAIMS THAT ARE MADE BACKED BY SUFFICIENT THEORETICAL OR EXPERIMENTAL SUPPORT? IS APPROPRIATE STATISTICAL ANALYSIS PROVIDED OF EXPERIMENTAL
+RESULTS AND ARE APPROPRIATE CONCLUSIONS DRAWN?
+
+Nothing
+
+EXPRESSION. IS THE PAPER CLEARLY WRITTEN AND ACCESSIBLE TO A WIDE AUDIENCE OF DATA MINING RESEARCHERS?  IF NOT, WHAT TYPES OF CHANGES ARE REQUIRED? IS THE ENGLISH EXPRESSION OF A SUITABLE STANDARD FOR PUBLICATION?  IS THE PAPER OF APPROPRIATE LENGTH? IF NOT, WHAT SHOULD BE ADDED, EXPANDED, DELETED OR COMPRESSED? DO THE TITLE AND ABSTRACT APPROPRIATELY REFLECT THE CONTENTS?
+
+The paper is poorly written
+- Answer: I will revise the paper in grammar so that it is more readable.
+
+
+TECHNICAL DETAIL.  IS SUFFICIENT DETAIL PROVIDED ABOUT ALGORITHMS AND TECHNIQUES, INCLUDING EXPERIMENTAL TECHNIQUES?  IS THERE SUFFICIENT DETAIL TO ALLOW REPLICATION OF THE WORK?
+
+Detailed
+
+FIGURES AND TABLES.  ARE THE FIGURES AND TABLES NECESSARY AND SUFFICIENT?
+
+No figures. Tables show naive information.
+
+REFERENCES.  ARE THE REFERENCES ACCURATE AND COMPLETE?
+
+Too old and not relevant.
+
+AS YOU PROBABLY KNOW, ECMLPKDD JOURNAL TRACK IS RUNNING IN TWO JOUNRALS: DMKD AND MACHINE LEARNING. TOPIC-WISE, WHICH JOURNAL, DMKD OR MACHINE LEARNING, WOULD BE A BETTER FIT FOR THIS PAPER?
+The paper is far from the quality needed to be published in this Journal.
+
+ANY OTHER COMMENTS NOT COVERED ABOVE.
+
+
+SUMMARIZE ANY CHANGES THAT MUST BE MADE FOR A REVISED VERSION OF THIS PAPER TO BE ACCEPTABLE FOR PUBLICATION.
+
+
+SUMMARIZE ANY FURTHER CHANGES THAT YOU RECOMMEND THE AUTHOR(S)CONSIDER.
+
+
+Reviewer #2: DATA MINING AND KNOWLEDGE DISCOVERY REVIEW FORM:
+
+DATA MINING AND KNOWLEDGE DISCOVERY IS A LEADING VENUE FOR ARCHIVAL PUBLICATION OF RESEARCH IN THE DISCIPLINES OF DATA MINING AND KNOWLEDGE DISCOVERY.  PAPERS SHOULD BE ASSESSED AGAINST HIGH STANDARDS OF SCHOLARSHIP, PRESENTATION AND EXPECTED IMPACT.
+
+
+
+SUMMARY. PROVIDE A BRIEF SUMMARY OF THE REASONS FOR YOUR RECOMMENDATION. WHAT ARE THE MAJOR STRENGTHS AND WEAKNESSES OF THE MANUSCRIPT?
+
+The paper describes an approach to collaborative filtering based on frequent itemset mining. In short, the contribution can be summarized as follows:
+- An algorithm for mining frequent itemsets is introduced.
+- New items (and relative ratings) can be recommended to the user by looking at the current history. If any frequent itemset is found which partially matches the user's history, then the mismatches can be exploited for recommendation.
+
+STRONG POINTS:
+
+- Simple idea, apparently effective
+
+WEAK POINT:
+
+- extremely poorly written
+- several inconsistencies in the formal framework
+- experimental setup not fully explained
+- A comparison with the (HUGE) state of the art is totally ignored
+
+
+RELEVANCE. HOW RELEVANT IS THE PAPER TO THE DISCIPLINES OF DATA MINING AND KNOWLEDGE DISCOVERY?
+
+The paper is relevant.
+
+
+SIGNIFICANCE. HOW SIGNIFICANTLY DOES THE PAPER ADVANCE THE CURRENT STATE-OF-THE-ART? HOW BIG AN IMPACT WILL THE PAPER HAVE, ON WHAT AREAS, AND WHY?  WILL THE PAPER STIMULATE FURTHER RESEARCH?
+
+The paper is of little significance. First, there are several algorithms for mining frequent item sets. Why should we need yet another algorithm is not explained. In particular, the algorithm (as stated by the same author) does not seem complete. I have to admit I was not able to understand how the algorithm work: the english is very poor, and the general idea is a little bit obscure. Hence, I'm not sure the algorithm is correct at all.
+
+
+
+RELATED RESEARCH.  IS ALL RELEVANT PRIOR WORK DISCUSSED? IS THE CURRENT WORK A DISTINCT AND NEW CONTRIBUTION RELATIVE TO THE AUTHOR(S)' PREVIOUS WORK?  [NOTE, ECMLPKDD TRACK DOES NOT CONSIDER EXPANDED VERSIONS OF WORK PREVIOUSLY PUBLISHED IN CONFERENCES OR WORKSHOPS.]
+
+The recent state of the art is totally ignored, both on the collaborative filtering topic, and on the frequent itemset mining problem. There are several approaches, even naive ones, which should be taken into account. Relying solely on item-based or user-based approaches, without mentioning a reference is not enough. Besides, There are several improvements of the SVD technique which should be considered.
+
+
+
+[NOTE, DMKD CLOSELY SCRUTINIZES ANY SUGGESTION BY A REVIEWER THAT THEIR OWN WORK SHOULD BE REFERENCED AND RESERVES THE RIGHT TO DELETE ANY SUCH COMMENTS FROM A REVIEW. WHERE A REVIEWER BELIEVES THEIR OWN WORK SHOULD BE CITED,WE ADVISE WRITING A COMMENT TO THE EDITORS UNDER CONFIDENTIAL COMMENTS TO THE EDITOR.]
+
+
+
+RELATIONSHIP TO PREVIOUS RESEARCH. IS THE NOVEL CONTRIBUTION OF THE NEW WORK MADE EXPLICIT TOGETHER WITH ITS RELATIONSHIP TO PRIOR WORK?  IS THE NEED FOR THE NEW CONTRIBUTION SUBSTANTIATED?  DOES THE PAPER MAKE CLEAR NOT ONLY THE STRENGTH BUT ALSO THE LIMITATIONS OF THE NEW CONTRIBUTION?
+
+
+
+No.
+
+THEORETICAL AND EXPERIMENTAL EVALUATION. IS THE THEORETICAL AND EXPERIMENTAL EVALUATION SOUND AND APPROPRIATE. ARE ALL CLAIMS THAT ARE MADE BACKED BY SUFFICIENT THEORETICAL OR EXPERIMENTAL SUPPORT? IS APPROPRIATE STATISTICAL ANALYSIS PROVIDED OF EXPERIMENTAL
+RESULTS AND ARE APPROPRIATE CONCLUSIONS DRAWN?
+
+
+
+The experimental part tells little about the experimental setting. First of all, one would like to know if the dataset was preprocessed somehow. Further, did the author split into training/test. Are the results cross-validated?
+Finally, there's no mention to the Item-based/user-based techniques. A reference would be appropriate, or even a short description of the algorithms employed. Finally, the paper should describe in greater details the evaluation methodology, and how it is related to the collaborative filtering algorithm. In fact, since frequent patterns represent local methods, there is no guarantee that the rating matrix can be completed. Hence the question: how do you handle cases where the algorithm does not provide a rating for the test set, if any?
+
+
+EXPRESSION. IS THE PAPER CLEARLY WRITTEN AND ACCESSIBLE TO A WIDE AUDIENCE OF DATA MINING RESEARCHERS?  IF NOT, WHAT TYPES OF CHANGES ARE REQUIRED? IS THE ENGLISH EXPRESSION OF A SUITABLE STANDARD FOR PUBLICATION?  IS THE PAPER OF APPROPRIATE LENGTH? IF NOT, WHAT SHOULD BE ADDED, EXPANDED, DELETED OR COMPRESSED? DO THE TITLE AND ABSTRACT APPROPRIATELY REFLECT THE CONTENTS?
+
+This is the weakest part of the paper. The english is rather poor and clearly below the standards for publication.
+
+
+
+TECHNICAL DETAIL.  IS SUFFICIENT DETAIL PROVIDED ABOUT ALGORITHMS AND TECHNIQUES, INCLUDING EXPERIMENTAL TECHNIQUES?  IS THERE SUFFICIENT DETAIL TO ALLOW REPLICATION OF THE WORK?
+
+
+
+The description of the algorithm is extremely poor. I have the impression that the author does not properly use the bit operators AND, OR and NOT. For example: page 7, line 26: b is likely to be all zeros. The required operation seems more like an OR.
+
+
+FIGURES AND TABLES.  ARE THE FIGURES AND TABLES NECESSARY AND SUFFICIENT?
+
+
+REFERENCES.  ARE THE REFERENCES ACCURATE AND COMPLETE?
+
+
+AS YOU PROBABLY KNOW, ECMLPKDD JOURNAL TRACK IS RUNNING IN TWO JOUNRALS: DMKD AND MACHINE LEARNING. TOPIC-WISE, WHICH JOURNAL, DMKD OR MACHINE LEARNING, WOULD BE A BETTER FIT FOR THIS PAPER?
+
+
+DMKD.
+
+ANY OTHER COMMENTS NOT COVERED ABOVE.
+
+
+SUMMARIZE ANY CHANGES THAT MUST BE MADE FOR A REVISED VERSION OF THIS PAPER TO BE ACCEPTABLE FOR PUBLICATION.
+
+
+SUMMARIZE ANY FURTHER CHANGES THAT YOU RECOMMEND THE AUTHOR(S)CONSIDER.
+
+
+Reviewer #3: DATA MINING AND KNOWLEDGE DISCOVERY REVIEW FORM:
+
+DATA MINING AND KNOWLEDGE DISCOVERY IS A LEADING VENUE FOR ARCHIVAL PUBLICATION OF RESEARCH IN THE DISCIPLINES OF DATA MINING AND KNOWLEDGE DISCOVERY.  PAPERS SHOULD BE ASSESSED AGAINST HIGH STANDARDS OF SCHOLARSHIP, PRESENTATION AND EXPECTED IMPACT.
+
+
+
+SUMMARY. PROVIDE A BRIEF SUMMARY OF THE REASONS FOR YOUR RECOMMENDATION. WHAT ARE THE MAJOR STRENGTHS AND WEAKNESSES OF THE MANUSCRIPT?
+
+According to the author, the manuscript proposes a recommendation algorithm that uses a collaborative filtering technique based on mining frequent itemsets. Actually, in essence, the manuscript proposes to pre-process (discretize) the ratings from a dataset; then, the frequent itemsets are mined; and finally, to provide the recommendations, the itemsets are binarized in order to facilitate the matching between itemsets and the items from the current active user. The proposal is not so innovative and the new contributions are limitated. Besides, the manuscript needs lots of improvements. For example, the proposal should be better motivated and described. The author does not present any related work and he does not discuss his proposal against other similar works proposed in the literature. The evaluation is very short and it is not enough to evaluate the merits of the proposal. The English expression is not suitable for publication.
+
+
+RELEVANCE. HOW RELEVANT IS THE PAPER TO THE DISCIPLINES OF DATA MINING AND KNOWLEDGE DISCOVERY?
+
+The manuscript is marginally relevant (contributions are limitated) to the disciplines of data mining and knowledge discovery.
+
+
+SIGNIFICANCE. HOW SIGNIFICANTLY DOES THE PAPER ADVANCE THE CURRENT STATE-OF-THE-ART? HOW BIG AN IMPACT WILL THE PAPER HAVE, ON WHAT AREAS, AND WHY?  WILL THE PAPER STIMULATE FURTHER RESEARCH?
+
+The manuscript provides a marginal advance of the current state-of-the-art and the impact on the recommender system area is small. Besides, I believe that this manuscript will not stimulate further research.
+
+
+RELATED RESEARCH.  IS ALL RELEVANT PRIOR WORK DISCUSSED? IS THE CURRENT WORK A DISTINCT AND NEW CONTRIBUTION RELATIVE TO THE AUTHOR(S)' PREVIOUS WORK?  [NOTE, ECMLPKDD TRACK DOES NOT CONSIDER EXPANDED VERSIONS OF WORK PREVIOUSLY PUBLISHED IN CONFERENCES OR WORKSHOPS.]
+
+[NOTE, DMKD CLOSELY SCRUTINIZES ANY SUGGESTION BY A REVIEWER THAT THEIR OWN WORK SHOULD BE REFERENCED AND RESERVES THE RIGHT TO DELETE ANY SUCH COMMENTS FROM A REVIEW. WHERE A REVIEWER BELIEVES THEIR OWN WORK SHOULD BE CITED,WE ADVISE WRITING A COMMENT TO THE EDITORS UNDER CONFIDENTIAL COMMENTS TO THE EDITOR.]
+
+The author does not present/discuss any related work. Therefore, it is difficult to identify new contributions relative to author's previous work or any other related work.
+
+
+RELATIONSHIP TO PREVIOUS RESEARCH. IS THE NOVEL CONTRIBUTION OF THE NEW WORK MADE EXPLICIT TOGETHER WITH ITS RELATIONSHIP TO PRIOR WORK?  IS THE NEED FOR THE NEW CONTRIBUTION SUBSTANTIATED?  DOES THE PAPER MAKE CLEAR NOT ONLY THE STRENGTH BUT ALSO THE LIMITATIONS OF THE NEW CONTRIBUTION?
+
+The author does not describe the advantages/limitations of his proposal with respect to prior works. As already stated, the author does not present any related work. Besides, the author does not present the needs for its proposal, and more information about the strengths and limitations of his proposal is needed in the manuscript.
+
+
+THEORETICAL AND EXPERIMENTAL EVALUATION. IS THE THEORETICAL AND EXPERIMENTAL EVALUATION SOUND AND APPROPRIATE. ARE ALL CLAIMS THAT ARE MADE BACKED BY SUFFICIENT THEORETICAL OR EXPERIMENTAL SUPPORT? IS APPROPRIATE STATISTICAL ANALYSIS PROVIDED OF EXPERIMENTAL
+RESULTS AND ARE APPROPRIATE CONCLUSIONS DRAWN?
+
+The evaluation needs to be extended in terms of datasets, discussion, statistical analysis and so on. The current evaluation does not provide enough evidences about the conclusions presented in the manuscript.
+- The algorithm is built upon Hudup - A framework of e-commercial recommendation algorithms. The complex evaluation mechanism inside Hudup goes beyond this paper.
+
+EXPRESSION. IS THE PAPER CLEARLY WRITTEN AND ACCESSIBLE TO A WIDE AUDIENCE OF DATA MINING RESEARCHERS?  IF NOT, WHAT TYPES OF CHANGES ARE REQUIRED? IS THE ENGLISH EXPRESSION OF A SUITABLE STANDARD FOR PUBLICATION?  IS THE PAPER OF APPROPRIATE LENGTH? IF NOT, WHAT SHOULD BE ADDED, EXPANDED, DELETED OR COMPRESSED? DO THE TITLE AND ABSTRACT APPROPRIATELY REFLECT THE CONTENTS?
+
+The manuscript needs a new organization of its sections in order to be accessible to a wide audience. Additionally, it should also be reviewed by a native English speaker. The English expression is not suitable for publication and makes the manuscript not so clear.
+
+
+TECHNICAL DETAIL.  IS SUFFICIENT DETAIL PROVIDED ABOUT ALGORITHMS AND TECHNIQUES, INCLUDING EXPERIMENTAL TECHNIQUES?  IS THERE SUFFICIENT DETAIL TO ALLOW REPLICATION OF THE WORK?
+
+The manuscript does not provide sufficient details. For example, the author only presents the pseudo-code for the algorithms. He does not describe them in details. The proposed technique should be illustrated in a figure, for example, and better described in the manuscript. The current version of the manuscript does not allow the replication of the work.
+
+
+FIGURES AND TABLES.  ARE THE FIGURES AND TABLES NECESSARY AND SUFFICIENT?
+
+The tables are not setup appropriately. On the other hand, the manuscript does not present any figure. The authors should present figures, in particular, for the evaluation section in order to emphasize the experimental results.
+
+
+REFERENCES.  ARE THE REFERENCES ACCURATE AND COMPLETE?
+
+The manuscript should present more references related to the author's proposal. The author only presents five references and some of them are not complete.
+
+
+AS YOU PROBABLY KNOW, ECMLPKDD JOURNAL TRACK IS RUNNING IN TWO JOUNRALS: DMKD AND MACHINE LEARNING. TOPIC-WISE, WHICH JOURNAL, DMKD OR MACHINE LEARNING, WOULD BE A BETTER FIT FOR THIS PAPER?
+
+A better fit for this manuscript would be the DMKD journal.
+
+
+ANY OTHER COMMENTS NOT COVERED ABOVE.
+
+None.
+
+
+SUMMARIZE ANY CHANGES THAT MUST BE MADE FOR A REVISED VERSION OF THIS PAPER TO BE ACCEPTABLE FOR PUBLICATION.
+
+The manuscript proposes a recommendation algorithm that uses a collaborative filtering technique based on mining frequent itemsets. The proposal is not so innovative and the new contributions are limitated. The current version of the manuscript does not allow the replication of the work. Besides, the manuscript needs lots of improvements, as described below.
+
+The abstract should be written in one paragraph. The current abstract has four paragraphs.
+
+The proposal should be better motivated and described. The manuscript does not provide sufficient details. For example, the author only presents the pseudo-code for the algorithms. He does not describe them in details. The proposed technique should be illustrated in a figure and better described in the manuscript. The tables are not setup appropriately. On the other hand, the manuscript does not present any figure. The authors should present figures, in particular, for the evaluation section in order to emphasize the experimental results.
+
+The author does not present/discuss any related work. Therefore, it is difficult to identify new contributions relative to author's previous work or any other related work. The author does not describe the advantages/limitations of his proposal with respect to prior works. More information about the strengths and limitations of his proposal is needed in the manuscript.
+
+The evaluation needs to be extended in terms of datasets, discussion, statistical analysis and so on. The current evaluation does not provide enough evidences about the conclusions presented in the manuscript.
+
+The manuscript needs a new organization of its sections in order to be accessible to a wide audience. Additionally, it should also be reviewed by a native English speaker. The English expression is not suitable for publication and makes the manuscript not so clear.
+
+The manuscript should present more references related to the author's proposal. The author only presents five references and some of them are not complete.
+
+
+SUMMARIZE ANY FURTHER CHANGES THAT YOU RECOMMEND THE AUTHOR(S)CONSIDER.
+
+The manuscript proposes a recommendation algorithm that uses a collaborative filtering technique based on mining frequent itemsets. The proposal is not so innovative and the new contributions are limitated. The current version of the manuscript does not allow the replication of the work. Besides, the manuscript needs lots of improvements, as described below.
+
+The abstract should be written in one paragraph. The current abstract has four paragraphs.
+
+The proposal should be better motivated and described. The manuscript does not provide sufficient details. For example, the author only presents the pseudo-code for the algorithms. He does not describe them in details. The proposed technique should be illustrated in a figure and better described in the manuscript. The tables are not setup appropriately. On the other hand, the manuscript does not present any figure. The authors should present figures, in particular, for the evaluation section in order to emphasize the experimental results.
+
+The author does not present/discuss any related work. Therefore, it is difficult to identify new contributions relative to author's previous work or any other related work. The author does not describe the advantages/limitations of his proposal with respect to prior works. More information about the strengths and limitations of his proposal is needed in the manuscript.
+
+The evaluation needs to be extended in terms of datasets, discussion, statistical analysis and so on. The current evaluation does not provide enough evidences about the conclusions presented in the manuscript.
+
+The manuscript needs a new organization of its sections in order to be accessible to a wide audience. Additionally, it should also be reviewed by a native English speaker. The English expression is not suitable for publication and makes the manuscript not so clear.
+
+The manuscript should present more references related to the author's proposal. The author only presents five references and some of them are not complete.

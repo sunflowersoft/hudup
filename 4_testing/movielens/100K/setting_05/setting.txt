@@ -1,0 +1,22 @@
+
+-------- System --------
+
+Processor:                       Pentium(R) Dual-Core CPU E5700 @ 3.00GHz
+Physical Installed memory (RAM): 2GB
+Physical Available memory (RAM): 1000MB
+Hard disk:                       320 GB
+Operating system:                Microsoft Windows 7 Ultimate 2009, 32-bit (version 6.1.7600)
+
+Java: JDK 7 version 1.7.0_03 build 1.7.0_03-b05
+      HotSpot(TM) Client VM (build 22.1-b02, mixed mode, sharing)
+
+-------- Algorithm --------
+
+max_recommended = 10
+bayesnet_clustered: bnet_node_number = 0, complete_method = mean_item, dim_reduce_ratio = 0.9, max_parent = 20
+gfall: min_sup = heuristic = minimum suport of binary items
+singular_value_decompose: ratio of dimension reduction = 0.9, maximum parents = 20, 
+svd_gradient: gamma = 0.005, lamda = 0.02, max_factor = 1000, max_iteration = 100, precision = 0.9
+
+
+Algorithms: bayesnet_clustered, gfall, neighbor_itembased, neighbor_userbased, svd_gradient

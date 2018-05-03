@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="net.hudup.plugins.core" version="1.0.0"
+	class="net.hudup.plugins.core.CorePlugin">
+	<runtime>
+		<library id="user" path="bin/" type="code">
+			<doc caption="API documentation">
+				<doc-ref path="api/index.html" caption="javadoc" />
+			</doc>
+			<export prefix="*" />
+		</library>
+	</runtime>
+	
+	<extension-point id="socket">
+		<parameter-def id="classes" />
+	</extension-point>
+</plugin>

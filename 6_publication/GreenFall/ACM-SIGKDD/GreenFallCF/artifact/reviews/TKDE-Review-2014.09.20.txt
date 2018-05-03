@@ -1,0 +1,6 @@
+Associate Editor 
+Comments to the Author: 
+Overall, the technical contribution of the paper is quite limited, and the presentation of the paper can be improved. 
+1.	In the introduction part (Section 1), the author gave a brief introduction to collaborative filtering, but did not clearly state the contribution of the paper. 
+2.	In the technical part (Section 2), the author described the solution, but there is no intuitive explanation of the motivation of the algorithm and the challenges it targets to address. 
+3.	The evaluation of the approach is weak: the authors should compare with state-of-the-arts methods. 

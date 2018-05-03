@@ -1,0 +1,31 @@
+jdaip@scirp.org <jdaip@scirp.org>;
+Acceptance date is Sep 26, 2014
+
+Dear Author(s),
+
+We are writing with our great pleasure to let you know that your manuscript is accepted for publishing by our journal Journal of Data Analysis and Information Processing (JDAIP) and our heartfelt appreciation for your intellectual contribution.
+
+Paper ID: 2870048
+Paper Title: A New Aware-context Collaborative Filtering Approach by Applying Multivariate Logistic Regression Model into General User Pattern
+
+Your paper is ready to be published. To move on to the next step, could you please kindly complete the following steps within ten days from today:
+
+Step 1: Sign the Copyright Form
+Step 2: Finish Payment for Article Processing Fee and Fill in the Remittance Information
+Step 3: Revise and Format Your Paper in Our Template, and Upload revised version
+in MS Word through Submission System. Please highlight the revisions in red color in the update version. (The template and review result can be found in our system)
+
+Please login to the system using your login name and password:
+http://papersubmission.scirp.org/login.jsp?journalID=450
+to view all the information.
+
+Additionally, please send the camera-ready file via email if the size of your file is more than 4MB.
+
+If you have any questions, please feel free to contact us.
+
+Best regards,
+
+Editorial Assistant of JDAIP
+Scientific Research Publishing
+Email: jdaip@scirp.org
+http://www.scirp.org/journal/jdaip

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Hudup plugin" default="compile" basedir=".">
+
+	<property name="bin.home" value="bin"/>
+	<property name="docs.home" value="docs"/>
+	<property name="src.home" value="src"/>
+
+	<path id="build.class.path">
+		<pathelement path="${bin.home}"/>
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="compile" description="Compile plugin source code">
+		<mkdir dir="${bin.home}"/>
+		
+		<javac srcdir="${src.home}" destdir="${bin.home}"
+				debug="on" includeAntRuntime="false">
+				
+			<include name="**/*.java"/>
+			<classpath refid="build.class.path"/>
+		</javac>
+    
+		<copy todir="${bin.home}">
+			<fileset dir="${src.home}" excludes="**/*.java"/>
+		</copy>
+		
+	</target>
+
+
+	<target name="clean" description="Clean binary code">
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${bin.home}" includes="**/*"/>
+		</delete>
+	</target>
+
+
+	<target name="docs" description="Generating javadoc for plug-in to folder ${docs.home}/api">
+		<javadoc destdir="${docs.home}/api"
+			classpathref="build.class.path"
+			sourcepath="${src.home}">
+		</javadoc>
+	</target>
+
+
+</project>

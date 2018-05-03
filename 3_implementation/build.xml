@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project name="Hudup" basedir="." default="compile">
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+	
+	<property name="working.home" value="working"/>
+	<property name="archive.home" value="${working.home}/archive"/>
+	<property name="bin.home" value="bin"/>
+	<property name="datasets.home" value="datasets"/>
+	<property name="db.home" value="${working.home}/db"/>
+	<property name="docs.home" value="docs"/>
+	<property name="lib.home" value="lib"/>
+	<property name="kb.home" value="${working.home}/kb"/>
+	<property name="plugins.home" value="plugins"/>
+	<property name="src.home" value="src"/>
+	<property name="temp.home" value="${working.home}/temp"/>
+	<property name="tools.home" value="tools"/>
+
+	<property name="doctype" value="*.txt, *.pdf, *.doc, *.docx"/>
+	<property name="product" value="hudup"/>
+	<property name="version" value="v11"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="common-io.jar" value="${lib.home}/commons-io-2.4.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="commons-logging.jar" value="${lib.home}/commons-logging.jar"/>
+
+
+	<!--
+	Function: Derby DBMS JDBC driver
+	Affected packages, classes: net.hudup.core.data.Provider
+	Referred jars:
+	Source: http://db.apache.org/derby
+	Vendor: Apache Derby, Apache DB Project
+	Archive: newtech-research/database-storagesystem/dbms/derby, newtech-research/prog-language/java/persistence/jdbc/derby
+	Status: using
+	Note: The derby.jar contains embedded driver "org.apache.derby.jdbc.EmbeddedDriver" which is included automatically in Java 7. The derbyclient.jar contains JDBC client driver which must be included
+	-->
+	<property name="derby.jar" value="${lib.home}/derby-10.9.1.0.jar"/>
+	<property name="derbyclient.jar" value="${lib.home}/derbyclient-10.9.1.0.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="dom4j.jar" value="${lib.home}/dom4j-1.6.1.jar"/>
+
+
+	<!--
+	Function: building up Bayesian network, used for collaborative filtering algorithm based on Bayesian network
+	Affected packages, classes: net.hudup.alg.cf.bnet.*, net.hudup.logistic.Bnet*
+	Referred jars:
+	Source: http://leo.ugr.es/elvira, http://www.ia.uned.es/~elvira
+	Vendor: Elvira System - Spanish
+	Archive: newtech-research/bayesian-network/ELVIRA
+	Status: using
+	Note: replaced by enhanced Bayasian system
+	-->
+	<property name="elvira.jar" value="${lib.home}/Elvira.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="flanagan.jar" value="${lib.home}/flanagan.jar"/>
+
+
+	<!--
+	Function: Parsing JSON format
+	Affected packages, classes: net.hudup.core.parser.JsonUtil
+	Referred jars: google-gson
+	Source: http://code.google.com/p/google-gson, https://github.com/google/gson
+	Vendor: google-gson
+	Archive: newtech-research/data-structure-alg/json/java/gson
+	Status: using
+	Note: used for plain text parsing. The json.jar is more important
+	-->
+	<property name="gson.jar" value="${lib.home}/gson-2.2.2.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="guava.jar" value="${lib.home}/guava-11.0.2.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="jama.jar" value="${lib.home}/Jama-1.0.3.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="javabayes.jar" value="${lib.home}/javabayes.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="javacsv.jar" value="${lib.home}/javacsv.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="javassist.jar" value="${lib.home}/javassist-3.12.1.GA.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="jgraphx.jar" value="${lib.home}/jgraphx.jar"/>
+
+
+	<!--
+	Function: Loading plug-ins (java classes) when booting application
+	Affected packages, classes: net.hudup.core.PluginManager
+	Referred jars: log4j.jar
+	Source: http://jpf.sourceforge.net/boot.html
+	Vendor: Java Plug-in Framework (JPF) Project
+	Archive: newtech-research/prog-language/java/plugin/jpf
+	Status: not using
+	Note:
+	-->
+	<property name="jpf.jar" value="${lib.home}/jpf.jar"/>
+	<property name="jpf-boot.jar" value="${lib.home}/jpf-boot.jar"/>
+	<property name="jpf-tools.jar" value="${lib.home}/jpf-tools.jar"/>
+
+
+	<!--
+	Function: Parsing JSON format
+	Affected packages, classes: net.hudup.core.parser.JsonUtil
+	Referred jars:
+	Source: http://www.json.org/java
+	Vendor: json.org,  JavaScript Programming Language-Standard ECMA-262 3rd Edition-December 1999
+	Archive: newtech-research/data-structure-alg/json/java/www.json.org$java
+	Status: not using
+	Note: removed in next version
+	-->
+	<property name="json.jar" value="${lib.home}/json.jar"/>
+
+
+	<!--
+	Function: Parsing JSON format
+	Affected packages, classes: net.hudup.core.client.Request, net.hudup.core.client.Response, net.hudup.core.data.PropList, net.hudup.core.parser.JsonUtil, net.hudup.listener.Delegator
+	Referred jars:
+	Source: http://code.google.com/p/json-io
+	Vendor: json-io, John DeRegnaucourt
+	Archive: newtech-research/data-structure-alg/json/java/json-io
+	Status: using
+	Note: more important than gson.jar
+	-->
+	<property name="json-io.jar" value="${lib.home}/json-io-2.2.30.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="jsr305.jar" value="${lib.home}/jsr305-1.3.9.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="junit.jar" value="${lib.home}/junit.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="jxl.jar" value="${lib.home}/jxl-2.6.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="jxp.jar" value="${lib.home}/jxp.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="log4j.jar" value="${lib.home}/log4j.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="mchange-commons-java.jar" value="${lib.home}/mchange-commons-java-0.2.2.jar"/>
+
+
+	<!--
+	Function: MySQL DBMS JDBC driver
+	Affected packages, classes: net.hudup.core.data.Provider
+	Referred jars:
+	Source: http://dev.mysql.com/downloads/connector/j/
+	Vendor: MySQL - Oracle Corporation
+	Archive: newtech-research/prog-language/java/persistence/jdbc/mysql
+	Status: using
+	-->
+	<property name="mysql-connector-java.jar" value="${lib.home}/mysql-connector-java-5.1.20-bin.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="quicktable.jar" value="${lib.home}/quicktable2swing11design.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="reflections.jar" value="${lib.home}/reflections-0.9.8.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="slf4j-api.jar" value="${lib.home}/slf4j-api-1.6.1.jar"/>
+	<property name="slf4j-simple.jar" value="${lib.home}/slf4j-simple-1.6.1.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="swingx-all.jar" value="${lib.home}/swingx-all-1.6.4.jar"/>
+
+
+	<!--
+	Function: creating a table whose rows can be sorted according to columns
+	Affected packages, classes: net.hudup.core.logistic.ui.SortableTable
+	Referred jars:
+	Source: http://www.java2s.com/Code/Java/Swing-JFC/AsimpleextensionofJTablethatsupportstheuseofaSortableTableModel.htm
+	Vendor: David Gilbert and Nobuo Tamemasa - Object Refinery Limited
+	Archive: newtech-research/ui/java/SORTABLETABLE
+	Status: using
+	Note:
+	-->
+	<property name="SortableTable.class" value="${bin.home}/net/hudup/core/logistic/ui/SortableTable.class"/>
+
+
+	<!--
+	Function: storaging via many protocol such as file, compressed file (zip, jar), http
+	Affected packages, classes: net.hudup.core.UriAssocDefault
+	Referred jars:
+	Source: http://truezip.java.net, https://christian-schlichtherle.bitbucket.io/truezip/
+	Vendor: TrueZip - Schlichtherle IT Services
+	Archive: newtech-research/database-storagesystem/io-programming/TrueZip
+	Status: using
+	-->
+	<property name="truezip.jar" value="${lib.home}/truezip-samples-7.7.4-jar-with-dependencies.jar"/>
+
+
+	<!--
+	Function: data mining - Weka is a collection of machine learning algorithms for data mining tasks
+	Affected packages, classes: net.hudup.core.data.Attribute, net.hudup.core.data.Profile
+	Referred jars:
+	Source: http://www.cs.waikato.ac.nz/ml/weka/downloading.html
+	Vendor: Waikato Environment for Knowledge Analysis, University of Waikato, New Zealand
+	Archive: newtech-research/data-mining-analyzing/soft-tool/WEKA
+	Status: using
+	Note:
+	-->
+	<property name="weka.jar" value="${lib.home}/weka.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="xml-apis.jar" value="${lib.home}/xml-apis-1.0.b2.jar"/>
+
+
+	<!--
+	Function:
+	Affected packages, classes:
+	Referred jars:
+	Source: 
+	Vendor:
+	Archive:
+	Status:
+	Note:
+	-->
+	<property name="zql.jar" value="${lib.home}/zql-20110826.jar"/>
+
+
+	<path id="build.class.path">
+		<pathelement path="${bin.home}"/>
+		<fileset dir="${lib.home}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+
+	<target name="compile" description="Compile source code">
+		<mkdir dir="${bin.home}"/>
+
+		<javac srcdir="${src.home}" destdir="${bin.home}"
+				debug="on" includeAntRuntime="false">
+				
+			<include name="**/*.java"/>
+			<classpath refid="build.class.path"/>
+		</javac>
+    
+		<copy todir="${bin.home}">
+			<fileset dir="${src.home}" excludes="**/*.java"/>
+		</copy>
+		
+	</target>
+
+
+	<target name="clean-archive" description="Clean binary code and temporary files in ${archive.home} directory">
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${archive.home}"/>
+		</delete>
+	</target>
+
+
+	<target name="clean-working" description="Clean binary code and temporary files in ${working.home} directory">
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${working.home}"/>
+		</delete>
+	</target>
+
+
+	<target name="clean" description="Clean binary code and temporary files in ${bin.home} directory and ${working.home} directory">
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${bin.home}" includes="**"/>
+		</delete>
+		
+		<antcall target="clean-working" />
+	</target>
+
+
+	<target name="docs" depends="compile" description="Generating javadoc to folder ${docs.home}/api">
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${docs.home}/api" includes="**"/>
+		</delete>
+
+		<javadoc destdir="${docs.home}/api"
+			classpathref="build.class.path"
+			sourcepath="${src.home}">
+		</javadoc>
+	</target>
+
+
+	<target name="docs-core" depends="compile" description="Generating javadoc for core classes to folder ${docs.home}/api">
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="${docs.home}/api" includes="**"/>
+		</delete>
+
+		<javadoc destdir="${docs.home}/api"
+			classpathref="build.class.path"
+			packagenames="net.hudup.core.*"
+			sourcepath="${src.home}">
+		</javadoc>
+	</target>
+
+
+	<target name="docs-zip" depends="compile" description="Generating and compressing javadoc to folder ${archive.home}">
+		<antcall target="clean-archive" />
+
+		<javadoc destdir="${archive.home}"
+			classpathref="build.class.path"
+			sourcepath="${src.home}">
+		</javadoc>
+
+		<zip destfile="${archive.home}/${product}-${version}-doc.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="all-in-one" depends="compile" description="Zip whole framework">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+
+		<zip destfile="${archive.home}/${product}-${version}-all-in-one.zip" basedir="." 
+			includes="${bin.home}/**, 
+				${datasets.home}/**, 
+				${docs.home}/**, 
+				${lib.home}/**, 
+				${plugins.home}/**, 
+				${src.home}/**, 
+				${tools.home}/**, *" 
+			excludes="${working.home}">
+		</zip>
+	</target>
+
+
+	<target name="setup-in-one" depends="compile" description="Create framework setup">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+
+		<zip destfile="${archive.home}/${product}-${version}-setup-in-one.zip" basedir="." 
+			includes="${bin.home}/**, 
+				${datasets.home}/**, 
+				${docs.home}/**, 
+				${lib.home}/**, 
+				${plugins.home}/**, 
+				${tools.home}/**, *" 
+			excludes="${working.home}">
+		</zip>
+	</target>
+
+
+	<target name="jar-core" depends="compile" description="Create core package">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+		
+		<if>
+		<equals arg1="${include-runtime-lib}" arg2="embed" />
+		<then>
+			<jar destfile="${archive.home}/${product}-core.jar">
+				<fileset dir="${bin.home}" includes="net/hudup/core/**, vn/pimath/**" />
+
+	    		<restrict>
+	     			<name name="**"/>
+					<archives>
+						<zips>
+							<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+						</zips>
+					</archives>
+	    		</restrict>
+
+			</jar>
+		</then>
+		<else>
+			<if>
+			<equals arg1="${include-runtime-lib}" arg2="normal" />
+			<then>
+				<antcall target="jar-runtime-lib" />
+			</then>
+			</if>
+
+			<jar destfile="${archive.home}/${product}-core.jar">
+				<fileset dir="${bin.home}" includes="net/hudup/core/**, vn/pimath/**" />
+			</jar>
+		</else>
+		</if>
+
+		<copy todir="${archive.home}">
+			<fileset dir="." includes="${doctype}"/>
+		</copy>
+
+		<zip destfile="${archive.home}/${product}-${version}-core.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="jar-listener" depends="compile" description="Create listener package">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+		
+		<if>
+		<equals arg1="${include-runtime-lib}" arg2="embed" />
+		<then>
+			<jar destfile="${archive.home}/${product}-listener.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/evaluate/**, net/hudup/server/**"/>
+	    		<restrict>
+	     			<name name="**"/>
+					<archives>
+						<zips>
+							<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+						</zips>
+					</archives>
+	    		</restrict>
+
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Listener"/>
+				</manifest>
+			</jar>
+		</then>
+		<else>
+			<if>
+			<equals arg1="${include-runtime-lib}" arg2="normal" />
+			<then>
+				<antcall target="jar-runtime-lib" />
+			</then>
+			</if>
+
+			<jar destfile="${archive.home}/${product}-listener.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/evaluate/**, net/hudup/server/**"/>
+
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Listener"/>
+				</manifest>
+			</jar>
+		</else>
+		</if>
+
+		<copy todir="${archive.home}">
+			<fileset dir="." includes="${doctype}, env.*, listener.*, balancer.*"/>
+		</copy>
+		
+		<zip destfile="${archive.home}/${product}-${version}-listener.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="jar-evaluator" depends="compile" description="Create evaluator package">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+
+		<if>
+		<equals arg1="${include-runtime-lib}" arg2="embed" />
+		<then>
+			<jar destfile="${archive.home}/${product}-evaluator.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/listener/**, net/hudup/server/**"/>
+	    		<restrict>
+	     			<name name="**"/>
+					<archives>
+						<zips>
+							<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+						</zips>
+					</archives>
+	    		</restrict>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Evaluator"/>
+				</manifest>
+			</jar>
+		</then>
+		<else>
+			<if>
+			<equals arg1="${include-runtime-lib}" arg2="normal" />
+			<then>
+				<antcall target="jar-runtime-lib" />
+			</then>
+			</if>
+
+			<jar destfile="${archive.home}/${product}-evaluator.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/listener/**, net/hudup/server/**"/>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Evaluator"/>
+				</manifest>
+			</jar>
+		</else>
+		</if>
+
+		<copy todir="${archive.home}">
+			<fileset dir="." includes="${doctype}, env.*, evaluator.*, batch-sample.script"/>
+		</copy>
+
+		<zip destfile="${archive.home}/${product}-${version}-evaluator.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="jar-server" depends="compile" description="Create server package">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+
+		<if>
+		<equals arg1="${include-runtime-lib}" arg2="embed" />
+		<then>
+			<jar destfile="${archive.home}/${product}-server.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/evaluator/**"/>
+	    		<restrict>
+	     			<name name="**"/>
+					<archives>
+						<zips>
+							<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+						</zips>
+					</archives>
+	    		</restrict>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Server"/>
+				</manifest>
+			</jar>
+		</then>
+		<else>
+			<if>
+			<equals arg1="${include-runtime-lib}" arg2="normal" />
+			<then>
+				<antcall target="jar-runtime-lib" />
+			</then>
+			</if>
+
+			<jar destfile="${archive.home}/${product}-server.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/evaluator/**"/>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Server"/>
+				</manifest>
+			</jar>
+		</else>
+		</if>
+
+		<copy todir="${archive.home}">
+			<fileset dir="." includes="${doctype}, env.*, listener.*, balancer.*, server.*"/>
+		</copy>
+
+		<zip destfile="${archive.home}/${product}-${version}-server.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="jar-toolkit" depends="compile" description="Create data toolkit package">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+
+		<if>
+		<equals arg1="${include-runtime-lib}" arg2="embed" />
+		<then>
+			<jar destfile="${archive.home}/${product}-toolkit.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/evaluator/**, net/hudup/listener/**, net/hudup/server/**"/>
+	    		<restrict>
+	     			<name name="**"/>
+					<archives>
+						<zips>
+							<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+						</zips>
+					</archives>
+	    		</restrict>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Toolkit"/>
+				</manifest>
+			</jar>
+		</then>
+		<else>
+			<if>
+			<equals arg1="${include-runtime-lib}" arg2="normal" />
+			<then>
+				<antcall target="jar-runtime-lib" />
+			</then>
+			</if>
+
+			<jar destfile="${archive.home}/${product}-toolkit.jar">
+	    		<fileset dir="${bin.home}" excludes="net/hudup/evaluator/**, net/hudup/listener/**, net/hudup/server/**"/>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Toolkit"/>
+				</manifest>
+			</jar>
+		</else>
+		</if>
+
+		<copy todir="${archive.home}">
+			<fileset dir="." includes="${doctype}, env.*, toolkit.*"/>
+		</copy>
+
+		<zip destfile="${archive.home}/${product}-${version}-toolkit.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="jar-all" depends="compile" description="Create all packages">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+		
+		<if>
+		<equals arg1="${include-runtime-lib}" arg2="embed" />
+		<then>
+			<jar destfile="${archive.home}/${product}.jar">
+	    		<fileset dir="${bin.home}"/>
+	    		<restrict>
+	     			<name name="**"/>
+					<archives>
+						<zips>
+							<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+						</zips>
+					</archives>
+	    		</restrict>
+	    		
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Starter"/>
+				</manifest>
+			</jar>
+		</then>
+		<else>
+			<if>
+			<equals arg1="${include-runtime-lib}" arg2="normal" />
+			<then>
+				<antcall target="jar-runtime-lib" />
+			</then>
+			</if>
+
+			<jar destfile="${archive.home}/${product}.jar">
+	    		<fileset dir="${bin.home}"/>
+
+				<manifest>
+					<attribute name="Main-Class" value="net.hudup.Starter"/>
+				</manifest>
+			</jar>
+		</else>
+		</if>
+		
+		<copy todir="${archive.home}">
+			<fileset dir="." includes="${doctype}, *.bat, *.sh, *.script"/>
+		</copy>
+		
+		<zip destfile="${archive.home}/${product}-${version}.zip" basedir="${archive.home}"/>
+	</target>
+
+
+	<target name="jar-runtime-lib" depends="compile" description="Create runtime library">
+		<mkdir dir="${archive.home}"/>
+
+		<jar destfile="${archive.home}/runtime-lib.jar" update="true">
+    		<restrict>
+     			<name name="**"/>
+				<archives>
+					<zips>
+						<fileset dir="${lib.home}" includes="*.jar, *.zip"/>
+					</zips>
+				</archives>
+    		</restrict>
+    		
+		</jar>
+
+	</target>
+
+
+	<target name="jar-update" depends="compile" description="Update whole package">
+		<jar destfile="${archive.home}/${package}.jar" update="true">
+    		<fileset dir="${bin.home}"/>
+		</jar>
+
+	</target>
+
+
+	<target name="datasets" depends="compile" description="Create datasets archive">
+		<mkdir dir="${archive.home}"/>
+		<antcall target="clean-archive" />
+
+		<zip destfile="${archive.home}/datasets.zip" basedir="${datasets.home}" />
+	</target>
+
+
+</project>
+

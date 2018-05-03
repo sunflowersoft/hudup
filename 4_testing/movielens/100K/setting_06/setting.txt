@@ -1,0 +1,49 @@
+
+-------- System --------
+
+Processor:                       Pentium(R) Dual-Core CPU E5700 @ 3.00GHz
+Physical Installed memory (RAM): 2GB
+Physical Available memory (RAM): 1000MB
+Hard disk:                       320 GB
+Operating system:                Microsoft Windows 7 Ultimate 2009, 32-bit (version 6.1.7600)
+
+Java: JDK 7 version 1.7.0_03 build 1.7.0_03-b05
+      HotSpot(TM) Client VM (build 22.1-b02, mixed mode, sharing)
+
+-------- Algorithm list --------
+
+bayes_lookup_table
+bayesnet_clustered
+bayesnet_clusteredWneighbor_itembased
+bayesnet_clusteredWneighbor_userbased
+bayesnet_clusteredWsvd_gradient
+bayesnet_clusteredWsvd_gradient_plus
+bayesnet_clustered$svd_gradient
+gfall
+gfallmaxi
+mean_item
+mean_user
+neighbor_itembased
+neighbor_userbased
+simple
+stat_naive
+svd_gradient
+svd_gradient_plus
+
+-------- Algorithm parameters --------
+
+max_recommended = 10
+bayes_lookup_table: max_iteration = 100, precision = 0.8
+bayesnet_clustered: bnet_node_number = 0, complete_method = mean_item, dim_reduce_ratio = 0.9, max_parent = 20
+bayesnet_clusteredWneighbor_itembased: bnet_node_number = 0, complete_method = neighbor_itembased, dim_reduce_ratio = 0.9, max_parent = 0
+bayesnet_clusteredWneighbor_userbased: bnet_node_number = 0, complete_method = neighbor_userbased, dim_reduce_ratio = 0.9, max_parent = 0
+bayesnet_clusteredWsvd_gradient: bnet_node_number = 0, complete_method = svd_gradient, dim_reduce_ratio = 0.9, max_parent = 0
+bayesnet_clusteredWsvd_gradient_plus: bnet_node_number = 0, complete_method = svd_gradient_plus, dim_reduce_ratio = 0.9, max_parent = 0
+bayesnet_clustered$svd_gradient: bnet_node_number = 0, complete_method = mean_item, dim_reduce_ratio = 0.9, max_parent = 20
+gfall, gfall_maxi: min_sup = heuristic = minimum suport of binary items
+neighbor_itembased: hybrid = false, simliar = pearson
+neighbor_userbased: hybrid = false, simliar = pearson
+svd_gradient: gamma = 0.005, lamda = 0.02, max_factor = 1000, max_iteration = 100, precision = 0.9
+svd_gradient_plus: gamma = 0.007, lamda = 0.005, lamda2 = 0.015, max_factor = 1000, max_iteration = 100, precision = 0.9
+
+

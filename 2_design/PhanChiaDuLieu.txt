@@ -1,0 +1,4 @@
+Giả sử tỉ lệ tập kiểm thử là c%
+Bước 1. Số bộ dữ liệu là k = 1/c%. Tạo ngẫu nhiên k tập kiểm thử "test 1", "test 2", "test 3", "test 4", "test 5" sao cho k tập rời nhau
+Bước 2. Ứng với mỗi tập kiểm thử "test i", tạo một tập huấn luyện "training i" là phần bù của toàn bộ dữ liệu gốc với tập kiểm thử "test i"
+Bước 3. Ghép mỗi cặp tập kiểm thử "test i" và tập huấn luyện "training i" thành bộ dữ liệu thứ i. Có tất cả k bộ

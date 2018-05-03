@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Hudup client example</title>
+<script language="javascript" src="client.js">
+</script>
+<script language="javascript" src="jquery.js">
+</script>
+
+<script language="javascript">
+
+$(document).ready( function() {
+
+	$.getJSON(
+				hdpGetJsonUrl('localhost', 4580, 'pimath', '1', null, 10, null), 
+				function(result) { alert(result); }
+			);
+});
+
+</script>
+</head>
+
+<body>
+
+<div id = "recommendlet"></div>
+
+</body>
+
+</html>

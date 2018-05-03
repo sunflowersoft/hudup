@@ -1,0 +1,17 @@
+RecSys website: https://recsys.acm.org
+
+---------------
+Subject: RecSys 2016 Tutorial Proposal Submission
+Email: tutorials2016@recsys.acm.org
+
+Dear Sir/Madam
+I am very interested in RecSys Tutorial 2016.
+This is a big chance for me to enhance research career.
+Moreover I desire to contribute to science. This is my biggest honor and happiness.
+
+I am Loc Nguyen, founder of Sunflower Soft Company, who submit a proposal of "Hudup – A Framework of E-commercial Recommendation Algorithms" to RecSys Tutorial 2016.
+
+Recommendation algorithm is very important to e-commercial websites when it can provide favorite products to online customers, which results out an increase in sale revenue. I propose the infrastructure for e-commercial recommendation solutions. It is a middleware framework of e-commercial recommendation software, which supports scientists and software developers to build up their own recommendation algorithms with low cost, high achievement and fast speed.
+
+The attached includes the tutorial proposal of Hudup.
+Best regards,

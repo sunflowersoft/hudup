@@ -1,0 +1,30 @@
+hdp_user, age, 0, 1, -1
+hdp_user, age, 1, 18, -1
+hdp_user, age, 2, 25, -1
+hdp_user, age, 3, 35, -1
+hdp_user, age, 4, 45, -1
+hdp_user, age, 5, 50, -1
+hdp_user, age, 6, 56, -1
+hdp_user, gender, 0, M, -1
+hdp_user, gender, 1, F, -1
+hdp_user, occupation, 0, other, -1
+hdp_user, occupation, 1, academic/educator, -1
+hdp_user, occupation, 2, artist, -1
+hdp_user, occupation, 3, clerical/admin, -1
+hdp_user, occupation, 4, college/grad student, -1
+hdp_user, occupation, 5, customer service, -1
+hdp_user, occupation, 6, doctor/health care, -1
+hdp_user, occupation, 7, executive/managerial, -1
+hdp_user, occupation, 8, farmer, -1
+hdp_user, occupation, 9, homemaker, -1
+hdp_user, occupation, 10, K-12 student, -1
+hdp_user, occupation, 11, lawyer, -1
+hdp_user, occupation, 12, programmer, -1
+hdp_user, occupation, 13, retired, -1
+hdp_user, occupation, 14, sales/marketing, -1
+hdp_user, occupation, 15, scientist, -1
+hdp_user, occupation, 16, self-employed, -1
+hdp_user, occupation, 17, technician/engineer, -1
+hdp_user, occupation, 18, tradesman/craftsman, -1
+hdp_user, occupation, 19, unemployed, -1
+hdp_user, occupation, 20, writer, -1

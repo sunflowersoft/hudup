@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+<plugin id="net.hudup.plugins.demo" version="1.0.0" >
+	<requires>
+		<import plugin-id="net.hudup.plugins.core" />
+	</requires>
+	
+	<runtime>
+		<!-- The package "lib/core.jar" includes almost your need. Please don't remove this line -->
+		<library id="core" path="lib/core.jar" type="code" />
+
+		<!-- Putting your own classes in directory "classes" -->
+		<library id="user" path="bin/" type="code">
+			<doc caption="API documentation">
+				<doc-ref path="api/index.html" caption="javadoc" />
+			</doc>
+			<export prefix="*" />
+		</library>
+		
+		<!-- Declare your more library -->
+	</runtime>
+	
+	<extension plugin-id="net.hudup.plugins.core" point-id="socket" id="yourcf">
+		<!-- Pay attention here, declare your recommendation algorithms. Multiple algorithms separated by commas "," -->
+		<parameter id="classes"
+			value="net.hudup.plugins.demo.PluginDemoCF, net.hudup.plugins.demo.PluginDemoCF2" />
+	</extension>
+</plugin>

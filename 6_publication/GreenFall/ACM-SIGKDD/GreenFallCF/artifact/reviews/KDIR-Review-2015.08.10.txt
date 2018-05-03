@@ -1,0 +1,33 @@
+Dear Dr. Loc Nguyen,
+
+ 
+
+I have cancelled your paper and I wish you all the best.
+
+Since I had already received some comments to your paper by the reviewers, I have decided to let you know so you can improve your paper for the future.
+
+ 
+
+Reviewer 1:
+
+In this paper, the authors present a Roller algorithm based on frequent itemsets mining through collaborative filtering. The attribute with different ranking scores is then divided into the more sub-attributes and presented it into the binary variable. In summary, the bit-map representation has been extensively studied. In Section 2.1, the details of AND-NOT operations have not provided. The pseudo-code of the improved Roller algorithm is required to be given instead of the step-by-step explanations. In summary, the technical depth is not enough and the major contributions are weak. Some comments and suggestions are given below. 1. An example is better to give for explaining the proposed approach. 2. The background of collaborative filtering should be presented. 1. It is necessary to prove that the improved Roller algorithm can be used to completely mine the frequent itemsets. 2. The issue of FIM is too old and not creative. The bit-map representation has widely studied. 3. More experiments should be conducted to prove that the performance of the proposed algorithm is better than other methods. 4. It has only 5 references in this paper, which is insufficient to show the related works of the designed approach and its background. 5. English writing should be polished.
+
+ 
+
+Reviewer 2:
+
+A major problem with this paper is the poor English, this has two major consequences, firstly you have not clearly explained the general problem area that you are addressing and secondly, the explanations of how your new "Roller" algorithm works are difficult to understand. When writing about your research in the future, it may help to also work through your algorithm using a small example. Your reference list is very short and limited, and it would also help to set your work into context if you provided more detailed comparisons with other related work.
+
+ 
+
+Reviewer 3:
+
+this paper was already published http://link.springer.com/chapter/10.1007%2F978-3-642-36543-0_3
+
+ 
+
+Best Regards,
+
+Monica Saramago
+
+On Behalf of KDIR's Secretariat

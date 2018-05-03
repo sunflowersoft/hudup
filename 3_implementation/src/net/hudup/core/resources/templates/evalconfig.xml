@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><config classname="net.hudup.evaluate.EvaluatorConfig" type="proplist"><param key="max_recommend" type="integer" value="10"/><param key="language" type="string" value="en"/><param key="country" type="string" value="US"/><param key="readonlykeys" type="string" value=""/></config>
